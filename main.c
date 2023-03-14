@@ -28,6 +28,10 @@ typedef float complex fc;
 typedef fc qubit[2];
 typedef qubit* qreg;
 
+void print_circ() {
+    printf(" q0 --|0>--[H]---.---[M]\n                 |\n q1 --|0>--[X]--[C]--[M]");
+}
+
 /* print probabilities of all registers */
 void print_probs(uint8_t size, qreg r) {
     for(int i = 0; i < size; i++) {
@@ -83,7 +87,7 @@ int main() {
     qasm_x(&(r[1]));
     qasm_cnot(&(r[0]), &(r[1]));
     print_probs(size, r);
-    system("cat test");
+    print_circ();
     printf("\n");
     return 0;
 }
