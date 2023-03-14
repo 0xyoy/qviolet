@@ -14,37 +14,41 @@ static fc p(qubit* q1, qubit* q2, uint8_t a, uint8_t b);
 //void qasm_prep_y(uint8_t size, qreg r);
 void qasm_prep_z(uint8_t size, qreg r);
 
+//void qasm_i(qubit* q);
+void qasm_h(qubit* q);
+
 void qasm_x(qubit* q);
 //void qasm_y(qubit* q);
 //void qasm_z(qubit* q);
-
-void qasm_h(qubit* q);
-//void qasm_i(qubit* q);
 
 //void qasm_rx(qubit* q, float angle);
 //void qasm_ry(qubit* q, float angle);
 //void qasm_rz(qubit* q, float angle);
 
 //void qasm_x90(qubit* q);
-//void qasm_mx90(qubit* q);
 //void qasm_y90(qubit* q);
+//void qasm_mx90(qubit* q);
 //void qasm_my90(qubit* q);
 
 //void qasm_s(qubit* q);
-//void qasm_st(qubit* q);
+//void qasm_sdag(qubit* q);
 
 //void qasm_t(qubit* q);
-//void qasm_tt(qubit* q);
+//void qasm_tdag(qubit* q);
 
 void qasm_cnot(qubit* q1, qubit* q2);
+
+//void qasm_toffoli(qubit* q1, qubit* q2, qubit* q3);
 
 //void qasm_cz(qubit* q1, qubit* q2);
 //void qasm_swap(qubit* q1, qubit* q2);
 
-//void qasm_cr(qubit* q1, qubit* q2, float angle);
 //void qasm_crk(qubit* q1, qubit* q2, uint8_t k);
+//void qasm_cr(qubit* q1, qubit* q2, float angle);
 
-//void qasm_toffoli(qubit* q1, qubit* q2, qubit* q3);
+//void qasm_c-x(qubit* q, bit* b);
+//void qasm_c-z(qubit* q, bit* b);
+
 //void qasm_measure_x(qubit* q);
 //void qasm_measure_y(qubit* q);
 //void qasm_measure_z(qubit* q);
